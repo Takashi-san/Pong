@@ -7,10 +7,11 @@ public class Ball : MonoBehaviour
     [SerializeField] Rigidbody2D _rb = null;
     [SerializeField] float _velocity = 0;
     [Range(0.0f, 10.0f)] [SerializeField] float _angleControl = 1;
+    public bool toP1 = false;
 
     void Start()
     {
-        _rb.velocity = Vector2.right * _velocity;
+        StartCoroutine(Spawn());
     }
 
     public void NewDirection(float position)
@@ -22,5 +23,11 @@ public class Ball : MonoBehaviour
         newVelocity *= _velocity;
 
         _rb.velocity = newVelocity;
+    }
+
+    IEnumerator Spawn() {
+        yield return new WaitForSeconds(1);
+        _rb.velocity = Vector2.right * _velocity * (toP1 ? -1 : 1);
+        yield break;
     }
 }
