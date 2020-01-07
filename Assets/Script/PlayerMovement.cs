@@ -5,13 +5,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D _rb = null;
+    [SerializeField] string _inputAxis = "Vertical";
     [SerializeField] float _velocity = 0;
     [SerializeField] float _mapLimit = 6;
     float _horizontal;
 
     private void Update()
     {
-        _horizontal = Input.GetAxis("Vertical");
+        _horizontal = Input.GetAxis(_inputAxis);
     }
 
     private void FixedUpdate()
