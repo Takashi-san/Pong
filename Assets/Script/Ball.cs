@@ -25,7 +25,8 @@ public class Ball : MonoBehaviour
         _rb.velocity = newVelocity;
     }
 
-    IEnumerator Spawn() {
+    IEnumerator Spawn()
+    {
         yield return new WaitForSeconds(1);
         _rb.velocity = Vector2.right * _velocity * (toP1 ? -1 : 1);
         yield break;

@@ -8,7 +8,9 @@ public class Scorer : MonoBehaviour
     [SerializeField] int _initialScore = 0;
     [SerializeField] TextMeshProUGUI _scoreText = null;
     [SerializeField] GameObject _ball = null;
-    [SerializeField] bool resetToP1 = false;
+    [SerializeField] bool _resetToP1 = false;
+    [SerializeField] int _winCondition = 10;
+    [SerializeField] GameManager _gameManager = null;
     int _score = 0;
 
     private void Start()
@@ -25,7 +27,7 @@ public class Scorer : MonoBehaviour
             Destroy(ball.gameObject);
             UpdateScore();
             ball = Instantiate(_ball).GetComponent<Ball>();
-            ball.toP1 = resetToP1;
+            ball.toP1 = _resetToP1;
         }
     }
 
@@ -33,5 +35,8 @@ public class Scorer : MonoBehaviour
     {
         _score++;
         _scoreText.text = _score.ToString();
+        if (_score == _winCondition) {
+            _gameManager.FinishMatch(_resetToP1);
+        }
     }
 }
