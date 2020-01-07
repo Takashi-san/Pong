@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Match-2p.unity
     guid: cbd7ba9663b780a4680aaca308f214f9
+  - enabled: 1
+    path: Assets/Scenes/Match-BOT.unity
+    guid: e95f03c68cfefba4a99f182302e60632
   m_configObjects: {}

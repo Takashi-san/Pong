@@ -35,8 +35,14 @@ public class Scorer : MonoBehaviour
     {
         _score++;
         _scoreText.text = _score.ToString();
-        if (_score == _winCondition) {
+        if (_score == _winCondition)
+        {
             _gameManager.FinishMatch(_resetToP1);
         }
+    }
+
+    public int GetScore()
+    {
+        return _score;
     }
 }
