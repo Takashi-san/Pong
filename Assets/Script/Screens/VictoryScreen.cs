@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class VictoryScreen : MonoBehaviour
 {
@@ -19,5 +20,17 @@ public class VictoryScreen : MonoBehaviour
         {
             _victoryTx.text = "P2 Victory!!!";
         }
+    }
+
+    public void Rematch()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -5,7 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 1956485c6694a754db0160d77ab2313b
+  - enabled: 1
+    path: Assets/Scenes/Match-shadow.unity
+    guid: 9e45fa61f37e78249b91965a7ce8c129
+  - enabled: 1
+    path: Assets/Scenes/Match-2p.unity
+    guid: cbd7ba9663b780a4680aaca308f214f9
   m_configObjects: {}

@@ -12,7 +12,13 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instantiate(_ball);
-        _ball.GetComponent<Ball>().toP1 = Random.Range(0, 1) == 1;
+        _ball.GetComponent<Ball>().toP1 = Random.Range(0, 2) == 1;
+    }
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            _pauseScreen.SetActive(true);
+        }
     }
 
     public void FinishMatch(bool isP1Victory)
