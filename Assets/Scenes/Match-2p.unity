@@ -419,8 +419,89 @@ Transform:
   m_LocalScale: {x: 0.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &151232912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756554, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329799504315756556, guid: 010798de94f4c594a841c7a1b2a6fda7,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 010798de94f4c594a841c7a1b2a6fda7, type: 3}
+--- !u!114 &151232913 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2329799504315756555, guid: 010798de94f4c594a841c7a1b2a6fda7,
+    type: 3}
+  m_PrefabInstance: {fileID: 151232912}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c85641d878a3b4caae99c28495d83b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &219023774
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,7 +989,7 @@ Transform:
   - {fileID: 2139549994}
   - {fileID: 219023775}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &607954364
 GameObject:
@@ -942,7 +1023,7 @@ Transform:
   - {fileID: 503123873}
   - {fileID: 1508515944}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &730083930
 GameObject:
@@ -1336,15 +1417,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1232782208}
-        m_MethodName: Rematch
-        m_Mode: 1
+      - m_Target: {fileID: 151232913}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Match-2p
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &855890293
@@ -1457,7 +1538,7 @@ Transform:
   m_LocalScale: {x: 1, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &868362737
 GameObject:
@@ -1541,15 +1622,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1232782208}
-        m_MethodName: MainMenu
-        m_Mode: 1
+      - m_Target: {fileID: 151232913}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &868362740
@@ -1895,7 +1976,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1053843979
 GameObject:
@@ -1975,7 +2056,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1096056875
 GameObject:
@@ -2059,15 +2140,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2044040712}
-        m_MethodName: Restart
-        m_Mode: 1
+      - m_Target: {fileID: 151232913}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Match-2p
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1096056878
@@ -2343,15 +2424,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2044040712}
-        m_MethodName: MainMenu
-        m_Mode: 1
+      - m_Target: {fileID: 151232913}
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1137892250
@@ -2960,7 +3041,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1701742562
 GameObject:
@@ -3347,7 +3428,7 @@ Transform:
   m_LocalScale: {x: 1, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2011144816
 GameObject:
